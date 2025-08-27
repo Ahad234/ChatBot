@@ -15,7 +15,7 @@ START = """**
 
 
 ╔═══⋆ʟᴏᴠᴇ ᴡɪᴛʜ⋆═══╗
-★ [𝐌𝐢𝐬𝐬 𝐒𝐡𝐫𝐮𝐭𝐢](https://t.me/Mrs_Shruti)     ★
+★ [- 𝐼 ꪜ ꪖ ꪀ](https://t.me/Botsxupdate)     ★
 ╚═════ ⋆★⋆ ═════╝
 **"""
 
@@ -42,7 +42,7 @@ TOOLS_DATA_READ = f"""**
 ──────────────
 
 ╔═══⋆ʟᴏᴠᴇ ᴡɪᴛʜ⋆═══╗
-★ [𝐌𝐢𝐬𝐬 𝐒𝐡𝐫𝐮𝐭𝐢](https://t.me/Mrs_Shruti)     ★
+★ [- 𝐼 ꪜ ꪖ ꪀ](https://t.me/Botsxupdate)     ★
 ╚═════ ⋆★⋆ ═════╝ **
 """
 
@@ -68,7 +68,7 @@ CHATBOT_READ = f"""**
 
 
 ╔═══⋆ʟᴏᴠᴇ ᴡɪᴛʜ⋆═══╗
-★ [𝐌𝐢𝐬𝐬 𝐒𝐡𝐫𝐮𝐭𝐢](https://t.me/Mrs_Shruti)     ★
+★ [- 𝐼 ꪜ ꪖ ꪀ](https://t.me/Botsxupdate)     ★
 ╚═════ ⋆★⋆ ═════╝**
 """
 
