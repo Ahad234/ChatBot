@@ -51,7 +51,7 @@ EMOJIOS = [
 
 BOT = "https://envs.sh/IL_.jpg"
 IMG = [
-    "https://graph.org/file/e8b472bcfa6680f6c6a5d.jpg",
+    "https://files.catbox.moe/vtnw2v.jpg",
 ]
 
 
