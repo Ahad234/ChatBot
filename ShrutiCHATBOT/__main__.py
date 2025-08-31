@@ -6,7 +6,6 @@ import threading
 import config
 from ShrutiCHATBOT import ID_CHATBOT
 from pyrogram import idle
-from pyrogram.types import BotCommand
 from config import OWNER_ID
 from ShrutiCHATBOT import LOGGER, ShrutiCHATBOT, userbot, load_clone_owners
 from ShrutiCHATBOT.modules import ALL_MODULES
@@ -69,31 +68,7 @@ async def anony_boot():
         importlib.import_module("ShrutiCHATBOT.modules." + all_module)
         LOGGER.info(f"📦 Loaded Module: {Fore.CYAN}{all_module}{Style.RESET_ALL}")
 
-    # ✅ Bot Commands
-    try:
-        await ShrutiCHATBOT.set_bot_commands(
-            commands=[
-                BotCommand("cstart", "Start the bot"),
-                BotCommand("chelp", "Get the help menu"),
-                BotCommand("cclone", "Make your own chatbot"),
-                BotCommand("cidclone", "Make your id-chatbot"),
-                BotCommand("ccloned", "Get List of all cloned bot"),
-                BotCommand("cping", "Check if the bot is alive or dead"),
-                BotCommand("lang", "Select bot reply language"),
-                BotCommand("chatlang", "Get current using lang for chat"),
-                BotCommand("resetlang", "Reset to default bot reply lang"),
-                BotCommand("id", "Get users user_id"),
-                BotCommand("cstats", "Check bot stats"),
-                BotCommand("gcast", "Broadcast any message to groups/users"),
-                BotCommand("chatbot", "Enable or disable chatbot"),
-                BotCommand("status", "Check chatbot enable or disable in chat"),
-                BotCommand("cshayri", "Get random shayri for love"),
-                BotCommand("ask", "Ask anything from ChatGPT"),
-            ]
-        )
-        LOGGER.info("✅ Bot commands set successfully.")
-    except Exception as ex:
-        LOGGER.error(f"❌ Failed to set bot commands: {ex}")
+    # ❌ Bot Commands section removed
 
     LOGGER.info(f"🎉 @{ShrutiCHATBOT.username} is fully up & running! 🚀")
     await idle()
