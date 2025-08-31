@@ -1,34 +1,16 @@
 import random
-from pymongo import MongoClient
+import asyncio
+from datetime import datetime, timedelta
+
 from pyrogram import Client, filters
 from pyrogram.errors import MessageEmpty
-from datetime import datetime, timedelta
-from pyrogram.enums import ChatMemberStatus, ChatType
-from pyrogram.errors import UserNotParticipant
-from pyrogram.enums import ChatAction, ChatMemberStatus as CMS
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message, CallbackQuery
+from pyrogram.types import Message
 from deep_translator import GoogleTranslator
+
 from ShrutiCHATBOT.database.chats import add_served_chat
 from ShrutiCHATBOT.database.users import add_served_user
-from config import MONGO_URL
-from ShrutiCHATBOT import ShrutiCHATBOT, mongo, LOGGER, db
-from ShrutiCHATBOT.modules.helpers import chatai, CHATBOT_ON
-from ShrutiCHATBOT.modules.helpers import (
-    ABOUT_BTN,
-    ABOUT_READ,
-    ADMIN_READ,
-    BACK,
-    CHATBOT_BACK,
-    CHATBOT_READ,
-    DEV_OP,
-    HELP_BTN,
-    HELP_READ,
-    MUSIC_BACK_BTN,
-    SOURCE_READ,
-    START,
-    TOOLS_DATA_READ,
-)
-import asyncio
+from ShrutiCHATBOT import ShrutiCHATBOT, db
+from ShrutiCHATBOT.modules.helpers import chatai
 
 translator = GoogleTranslator()
 
